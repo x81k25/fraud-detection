@@ -1,20 +1,20 @@
-import pandas as pd
-
 # this is the script that was used to generate creditcard.parquet
 # it requires creditcard.csv to be downloaded from kaggle to run
 # creditcard.csv is not included in this repository due to its size
 
+import pandas as pd
+
 # read in csv
-cc_csv = pd.read_csv("../data/creditcard.csv")
+cc_csv = pd.read_csv("./data/creditcard.csv")
 
 # turn all column names to lowercase
 cc_csv.columns = [x.lower() for x in cc_csv.columns]
 
 # select the time, v1, and v2 columns
 cc ={
+	'class': pd.Series(cc_csv['class'], dtype='bool'),
 	'time': pd.Series(cc_csv['time'], dtype='int32'),
 	'amount': pd.Series(cc_csv['amount'], dtype='float32'),
-	'class': pd.Series(cc_csv['class'], dtype='bool'),
 	'v1': pd.Series(cc_csv['v1'], dtype='float32'),
 	'v2': pd.Series(cc_csv['v2'], dtype='float32'),
 	'v3': pd.Series(cc_csv['v3'], dtype='float32'),
@@ -48,4 +48,4 @@ cc ={
 cc = pd.DataFrame(cc)
 
 # write to parquet
-cc.to_parquet('../data/creditcard.parquet', engine='pyarrow')
+cc.to_parquet('./data/creditcard.parquet', engine='pyarrow')

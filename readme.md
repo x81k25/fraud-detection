@@ -61,14 +61,14 @@ jupyter notebook
 
 This project includes several Jupyter notebooks that showcase different aspects of the project and can be used for analysis or exploration. All of them are contained with the ./notebooks/ directory.
 
-1. 01-data-discovery
+- 01-data-discovery
     - a quantitative and visual examination of the input data set
     - explores the overall quality of the data 
     - looks at stastical measures of each fields
     - provides relevant visualization, especially of the fields distributions 
-2. 02-feature-engineering
+- 02-feature-engineering
     - generates additional features to be used for the classifaction models
-3. 03-classification
+- 03-classification
     - uses a series of different classification models to experiment with which is the most performant 
     - discusses which metrics will be most relevant for this analysis
     - outputs and visualizes relevant metrics to dispaly a comparison of the different models used

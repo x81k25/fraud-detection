@@ -1,3 +1,5 @@
 .venv
+.idea
 04-classifiction-accelerated.ipynb
 environment.yml
+data/creditcard.csv
