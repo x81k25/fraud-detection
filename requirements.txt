@@ -2,6 +2,7 @@ imbalanced-learn
 ipywidgets
 pandas
 plotly
+pyarrow
 matplotlib
 scikit-learn
 seaborn

@@ -16,7 +16,11 @@ The models are compared and finally recommendations are given on which model I b
 
 #### Project Structure
 - data/: Directory containing the dataset.
+    - the creditcard data file contained in the data folder is an optimized version of the original .csv
+    - the data types of objects were specified and it was stored as a parquet file
+    - this will have no impact on the data presented in the notebooks, but it shaves ~66% off of the orignal file size and properly preserves data with out having to perform any additional operations other than reading the dataset in
 - notebooks/: Directory containing Jupyter notebooks for data exploration, model training, and evaluation.
+- scripts/: conatains any python scripts used
 - README.md: This file.
 - requirements.txt: List of required Python packages.
 
