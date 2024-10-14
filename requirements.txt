@@ -4,6 +4,8 @@ pandas
 plotly
 pyarrow
 matplotlib
+numpy == 2.0
 scikit-learn
 seaborn
+shap
 xgboost
